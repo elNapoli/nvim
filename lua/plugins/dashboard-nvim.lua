@@ -22,10 +22,10 @@ return {
 						key = "f",
 					},
 					{
-						desc = " Apps",
+						desc = " Mason",
 						group = "DiagnosticHint",
-						action = "Telescope app",
-						key = "a",
+						action = "Mason",
+						key = "m",
 					},
 					{
 						desc = " dotfiles",
