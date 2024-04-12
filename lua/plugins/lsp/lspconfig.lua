@@ -112,6 +112,7 @@ return {
 				lspconfig["emmet_ls"].setup({
 					capabilities = capabilities,
 					filetypes = {
+						"vue",
 						"html",
 						"typescriptreact",
 						"javascriptreact",
