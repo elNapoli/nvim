@@ -47,7 +47,7 @@ return {
 			{ desc = "Live fuzzy search inside of the currently open buffer" }
 		)
 		keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
-		keymap.set("n", "<leader>fm", "<cmd>Telescope marks>", { desc = "Lists vim marks and their value" })
+		keymap.set("n", "<leader>fm", "<cmd>Telescope marks<cr>", { desc = "Lists vim marks and their value" })
 		keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
 		keymap.set(
 			"n",

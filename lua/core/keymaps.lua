@@ -19,6 +19,8 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
 vim.keymap.set("n", "<C-a>", "<cmd>wqall!<CR>", { desc = "Guarda y cierra todo los archivos de vim" })
+vim.keymap.set("n", "<C-x>", "<cmd>qall!<CR>", { desc = "Cierra todo los archivos de vim" })
+vim.keymap.set("n", "<C-s>", "<cmd>w!<CR>", { desc = "Save file!" })
 
 vim.keymap.set("n", "<C-Up>", ":m .-2<CR>")
 vim.keymap.set("n", "<C-Down>", ":m .+1<CR>")
