@@ -3,6 +3,7 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
+		"williamboman/mason-lspconfig.nvim",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 		{ "folke/neodev.nvim", opts = {} },
 	},
@@ -77,6 +78,22 @@ return {
 			local hl = "DiagnosticSign" .. type
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
+
+		mason_lspconfig.setup({
+			-- list of servers for mason to install
+			ensure_installed = {
+				"tsserver",
+				"html",
+				"cssls",
+				"tailwindcss",
+				"svelte",
+				"lua_ls",
+				"graphql",
+				"emmet_ls",
+				"prismals",
+				"pyright",
+			},
+		})
 
 		mason_lspconfig.setup_handlers({
 			-- default handler for installed servers
