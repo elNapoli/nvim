@@ -85,13 +85,14 @@ return {
 				"tsserver",
 				"html",
 				"cssls",
-				"tailwindcss",
 				"svelte",
 				"lua_ls",
 				"graphql",
 				"emmet_ls",
 				"prismals",
 				"pyright",
+				"vls",
+				"volar",
 			},
 		})
 
@@ -162,6 +163,13 @@ return {
 				-- configure lua server (with special settings)
 				lspconfig["lua_ls"].setup({
 					capabilities = capabilities,
+				})
+			end,
+			["volar"] = function()
+				-- configure lua server (with special settings)
+				lspconfig["volar"].setup({
+					capabilities = capabilities,
+					filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
 				})
 			end,
 		})
