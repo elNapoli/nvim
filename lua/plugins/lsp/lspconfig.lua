@@ -158,6 +158,12 @@ return {
 					},
 				})
 			end,
+			["vuels"] = function()
+				-- configure lua server (with special settings)
+				lspconfig["lua_ls"].setup({
+					capabilities = capabilities,
+				})
+			end,
 		})
 	end,
 }

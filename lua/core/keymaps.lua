@@ -20,6 +20,7 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 vim.keymap.set("n", "<C-a>", "<cmd>wqall!<CR>", { desc = "Guarda y cierra todo los archivos de vim" })
 vim.keymap.set("n", "<C-x>", "<cmd>qall!<CR>", { desc = "Cierra todo los archivos de vim" })
+vim.keymap.set("n", "<C-q>", "<cmd>q<CR>", { desc = "Cierra el archivo actual si no posee cambios" })
 vim.keymap.set("n", "<C-s>", "<cmd>w!<CR>", { desc = "Save file!" })
 
 vim.keymap.set("n", "<C-Up>", ":m .-2<CR>")
