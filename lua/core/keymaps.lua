@@ -24,4 +24,5 @@ vim.keymap.set("n", "<C-q>", "<cmd>q<CR>", { desc = "Cierra el archivo actual si
 vim.keymap.set("n", "<C-s>", "<cmd>w!<CR>", { desc = "Save file!" })
 
 vim.keymap.set("n", "<C-Up>", ":m .-2<CR>")
-vim.keymap.set("n", "<C-Down>", ":m .+1<CR>")
+vim.keymap.set("n", "<C-RightMouse>", ":bnext<CR>")
+vim.keymap.set("n", "<C-LeftMouse>", ":bprevious<CR>")
